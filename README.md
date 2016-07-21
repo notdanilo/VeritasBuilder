@@ -1,0 +1,2 @@
+# VeritasBuilder
+CMake helpers
