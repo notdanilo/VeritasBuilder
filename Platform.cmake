@@ -1,5 +1,5 @@
-INCLUDE("Platform.Android.cmake")
-INCLUDE("Platform.Emscripten.cmake")
+INCLUDE("Platforms/Android.cmake")
+INCLUDE("Platforms/Emscripten.cmake")
 
 FUNCTION(VERITAS_SET_PLATFORM_PROPERTIES TARGET PARAMETER)
     IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")

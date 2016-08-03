@@ -1,0 +1,9 @@
+FUNCTION(VERITAS_SET_COMPILER_PROPERTIES TARGET PARAMETER)
+    SET(COMPILER ${CMAKE_C_COMPILER_ID})
+
+    # Setup version. Ref.: http://stackoverflow.com/questions/4058565/check-gcc-minor-in-cmake
+
+    IF(NOT PARAMETER STREQUAL "INTERFACE")
+        SET_PROPERTY(TARGET ${TARGET} PROPERTY "Compiler" ${COMPILER})
+    ENDIF()
+ENDFUNCTION()
